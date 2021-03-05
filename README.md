@@ -6,7 +6,11 @@
 
 ## Introduction
 
-_"Error"_ handling has evolved over PHP's lifetime, from returning flag values such as 1.)  `false` when calling `strpos()` where the substring is not found, 2.) outputting diagnostic messages such a `E_WARNING` or `E_NOTICE` to 3. throwing Exceptions that need to be caught. And PHP is still littered with this collection of inconsistency which most PHP developers who have expressed an oppinion seem to be interested in seeing be made more consistent.
+_"Error"_ handling has evolved over PHP's lifetime, from:
+
+1. Returning flag values such as `false` when calling `strpos()` where the substring is not found, 
+2. Outputting diagnostic messages such a `E_WARNING` or `E_NOTICE` to,
+3. Throwing Exceptions that need to be caught. And PHP is still littered with this collection of inconsistency which most PHP developers who have expressed an oppinion seem to be interested in seeing be made more consistent.
 
 In general the majority of influential PHP developers seem intereste in seeing Exceptions overtaking most if not all error handling in PHP whereas a non-insignificant contingent would like to see more GoLang-style immediate handling of errors be enabled. Ideally both approaches would be supported if it were easy and elegant to do so.
 
