@@ -59,7 +59,7 @@ $value, void = GetValueButMaybeThrowException()
 echo $value
 ```
 
-This assumes George P. Banyard's RFC[[1]](https://github.com/Girgias/error-control-operator-exceptions-rfc) to extend error control operator to suppress exceptions.
+This assumes George P. Banyard's RFC[[1](https://github.com/Girgias/error-control-operator-exceptions-rfc)] to extend error control operator to suppress exceptions.
 
 ```php
 echo @GetValueButMaybeThrowException()
@@ -88,7 +88,7 @@ function GetValueButMaybeReturnException(): string,Exception? {...}
 
 ## Prior Art
 
-This approach is similar but not identical to Go-style[[2]](https://blog.golang.org/error-handling-and-go) returns.
+This approach is similar but not identical to Go-style[[2](https://blog.golang.org/error-handling-and-go)] returns.
 
 Go functions can return one or more values to the caller, and for the use-case a function needs to return an error object it should be the last return value, but only _**by convention**_.
 
@@ -113,7 +113,7 @@ And it would still allow developers who want to handle errors immediately do so 
 
 This would have a backward compatible syntax and leverage the existing `Exception` classes and their related concepts. IOW, no new concept of an `Error` class would be required.
 
-However, changes to existing functions in PHP would not be possible in a backward compatible manner without George P. Banyard's `throw_on_error` RFC[[3]](https://github.com/Girgias/php-rfc-throw-on-error-declare). Ideally that RFC would accompany this one in being implemented.
+However, changes to existing functions in PHP would not be possible in a backward compatible manner without George P. Banyard's `throw_on_error` RFC[[3](https://github.com/Girgias/php-rfc-throw-on-error-declare)]. Ideally that RFC would accompany this one in being implemented.
 
 ## Backward Incompatible Changes
 
@@ -162,10 +162,11 @@ After the project is implemented, this section should contain
 
 ## References
 
-[1]:
-[2]:
-[3]:
-[4]:
+[1]: "Extend error control operator to suppress exceptions" PHP RFC: <https://github.com/Girgias/error-control-operator-exceptions-rfc>
+
+[2]: Error handling in Golang: <https://blog.golang.org/error-handling-and-go>  
+
+[3]: `throw_on_error` PHP RFC: <https://github.com/Girgias/php-rfc-throw-on-error-declare> 
 
 
 ## Rejected Features 
