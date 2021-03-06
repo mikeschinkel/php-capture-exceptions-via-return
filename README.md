@@ -94,7 +94,7 @@ Go functions can return one or more values to the caller, and for the use-case a
 
 Further in Go, _**all**_ values returned by a function need to be accepted by the caller.
 
-### Deviation from Prior Art
+### Improving Prior Art
 In this proposal however HP would not be supporting multiple return values, _**per se**_.
 
 Instead PHP would be supporting one (1) return value, as it currently does, and one (1) optional Exception object, or `null`.
