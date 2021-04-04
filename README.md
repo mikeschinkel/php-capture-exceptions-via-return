@@ -44,7 +44,7 @@ This would be an optional approach that would not throw the exception but instea
 
 ```php
 $value, $e = GetValueButMaybeThrowException()
-if !is_null($e) {
+if (!is_null($e)) {
    echo $e->getMessage()
    return
 }
