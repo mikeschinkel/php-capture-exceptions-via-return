@@ -1,4 +1,4 @@
-# PHP RFC: Optionally capture exceptions as second return values
+# PHP RFC: Allow capturing exceptions as second return values, optionally
   * Version: 0.1
   * Date: 2020-03-05
   * Author: Mike Schinkel, <mike@newclarity.net>
